@@ -3,6 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
   max-width: 1440px;
   margin: auto;
+  color: #023135;
 }
 
 a {
@@ -26,6 +27,11 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 16px;
+  padding-bottom: 32px;
 }
 
 .header__list {
@@ -34,8 +40,109 @@ a {
   display: flex;
 }
 
+.header__item {
+  padding-left: 48px;
+}
+
+.header__link {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #023135;
+}
+
 .header__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__content {
+  -ms-flex-preferred-size: 542px;
+      flex-basis: 542px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.header__heading {
+  margin-top: 37px;
+  margin-bottom: 21px;
+  font-size: 50px;
+  line-height: 64px;
+  letter-spacing: 0.31px;
+}
+
+.header__text {
+  width: 337px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin-bottom: 60px;
+}
+
+.header__btn {
+  background: #007a5c;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  padding: 18px 38px;
+}
+
+.header__btn:hover {
+  color: #007a5c;
+  background: #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.tutors__heading {
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.67px;
+  text-transform: uppercase;
+  color: #637381;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.tutors__subjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tutors__item {
+  border: 1px solid #007a5c;
+  border-radius: 30px;
+  padding: 8px 15px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: #007a5c;
+}
+
+.tutors__item:hover {
+  background-color: #007a5c;
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
